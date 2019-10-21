@@ -14,7 +14,7 @@ body{
 #container{
     width:750px;
     margin:0 auto;
-}     
+}
 
 /* FORMATANDO MENU */
 
@@ -32,8 +32,6 @@ body{
     text-indent:-3000px;
 
 }
-
-
 
 ul#navegacao, ul#navegacao li{float:left;}
 
@@ -89,6 +87,7 @@ body.fotos #navegacao a#fotos{
 .caixa p{
     margin:5px;
 }
+
 
 #rodape{clear:both;} /* LIMPANDO FLOAT */
 
@@ -208,6 +207,46 @@ body.fotos #navegacao a#fotos{
 
 }
 
+/* FORMATANDO CONTEUDO PARA IFRAME */
+
+body.news {
+    background:none;
+}
+
+body.news #container,body.news #conteudo {
+    margin:0px;
+}
+
+body.news #primario{
+    width:270px;
+    margin:0px;
+}
+
+/* FORMATANDO IFRAMEs */
+
+
+#conteudo{
+    position:relative;
+}
+
+
+#tres-colunas-news #news, #tres-colunas-news #news5{
+    opacity:0;
+}
+
+#iframe-news, #iframe-news2{
+    position:absolute;
+    top:10px;
+    /* border:1px red solid; */
+    border:none;
+    width:270px;
+    height:430px;
+    overflow:hidden;
+
+}
+
+
+
 /* FORMATANDO LATERAL */
 
 #lateral ul a{
@@ -223,6 +262,31 @@ body.fotos #navegacao a#fotos{
 #lateral ul a:hover{
     background:#f9f9f9 url(../imagens/marcador.png) no-repeat left center;
     color:#a1a1a1;
+}
+
+    /* FORMATANDO CONTEUDO LATERAL - PROPAGANDAS */
+
+#propaganda-img{
+    font-size:0.7em;
+    text-align:center;
+    border-bottom:1px #ccc solid;
+    background-image:url(../imagens/corrida6.jpg) no-repeat;
+    background-size:105%;
+    background-position:10% 145%;
+    height:75px;
+    animation:corrida 3s linear infinite;
+    transition-duration: 0s;
+    
+}
+
+@keyframes corrida{
+    16%{background-image:url(../imagens/corrida1.jpg);transition-duration: 0s;}
+    32%{background-image:url(../imagens/corrida2.jpg);transition-duration: 0s;}
+    50%{background-image:url(../imagens/corrida3.jpg);}
+    67%{background-image:url(../imagens/corrida4.jpg);}
+    83%{background-image:url(../imagens/corrida5.jpg);transition-duration: 0s;}
+    100%{background-image:url(../imagens/corrida6.jpg);transition-duration: 0s;}
+
 }
 
         /* FORMATANDO FORMULÁRIOS  */
@@ -255,6 +319,11 @@ label{
 
 /* FORMATANDO CONTEUDO PRINCIPAL E SECUNDARIO- NOTICIAS EM DESTAQUE */
 
+div.caixa-conteudo:first-of-type p{
+    text-align:justify;
+
+}
+
 .caixa img{
     border: 2px solid #dfdfdf;
     width:98%;
@@ -268,6 +337,7 @@ label{
 
 .destaque2 h3{
     background:#de003e;
+    display:inline-block;
 }
 
 .caixa h3{
@@ -319,3 +389,5 @@ a:link, a:visited{
 a:hover{
     color: #e50040;
 }
+
+
