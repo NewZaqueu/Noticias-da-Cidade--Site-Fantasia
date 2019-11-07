@@ -9,9 +9,13 @@ Este template é um dos 20 projetos que estou desenvolvendo em conjunto com o pr
 Aprendi muito com esse projeto.
 
 
-Página Inicial - (Possui iframes que permite uam preview das outras notícias ná própia pagina incial)
+Página Inicial - Possui iframes que permite uam preview das outras notícias ná própia pagina incial
 
 <img src="https://github.com/NewZaqueu/Noticias-da-Cidade--Site-Fantasia/blob/master/Projeto%204%20-%20Site%20Noticias/index.png">
+
+A página inicial possui iframes que permite uam preview das outras notícias ná própia pagina incial
+
+<img src="https://github.com/NewZaqueu/Noticias-da-Cidade--Site-Fantasia/blob/master/Projeto%204%20-%20Site%20Noticias/index2.png">
 
 Página Brasil - Layout com duas colunas
 
